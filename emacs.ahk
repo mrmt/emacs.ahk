@@ -295,17 +295,19 @@ scroll_down()
   Else
     indent_for_tab_command()
   Return
-^s::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-  {
-    If is_pre_x
-      save_buffer()
-    Else
-      isearch_forward()
-  }
-  Return
+
+;;^s::
+;;  If is_target()
+;;    Send %A_ThisHotkey%
+;;  Else
+;;  {
+;;    If is_pre_x
+;;      save_buffer()
+;;    Else
+;;      isearch_forward()
+;;  }
+;;  Return
+
 ^r::
   If is_target()
     Send %A_ThisHotkey%
