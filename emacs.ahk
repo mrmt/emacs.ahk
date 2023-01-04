@@ -395,12 +395,6 @@ scroll_down()
   Else
     backward_char()
   Return
-^v::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    scroll_down()
-  Return
 !v::
   If is_target()
     Send %A_ThisHotkey%
