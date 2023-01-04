@@ -29,16 +29,6 @@ is_target()
     Return 1
   IfWinActive,ahk_class Vim ; GVIM
     Return 1
-;  IfWinActive,ahk_class SWT_Window0 ; Eclipse
-;    Return 1
-;   IfWinActive,ahk_class Xming X
-;     Return 1
-;   IfWinActive,ahk_class SunAwtFrame
-;     Return 1
-;   IfWinActive,ahk_class Emacs ; NTEmacs
-;     Return 1  
-;   IfWinActive,ahk_class XEmacs ; XEmacs on Cygwin
-;     Return 1
   Return 0
 }
 
@@ -265,24 +255,12 @@ scroll_down()
   Else
     kill_line()
   Return
-;; ^o::
-;;   If is_target()
-;;     Send %A_ThisHotkey%
-;;   Else
-;;     open_line()
-;;   Return
 ^g::
   If is_target()
     Send %A_ThisHotkey%
   Else
     quit()
   Return
-;; ^j::
-;;   If is_target()
-;;     Send %A_ThisHotkey%
-;;   Else
-;;     newline_and_indent()
-;;   Return
 ^m::
   If is_target()
     Send %A_ThisHotkey%
@@ -295,33 +273,12 @@ scroll_down()
   Else
     indent_for_tab_command()
   Return
-
-;;^s::
-;;  If is_target()
-;;    Send %A_ThisHotkey%
-;;  Else
-;;  {
-;;    If is_pre_x
-;;      save_buffer()
-;;    Else
-;;      isearch_forward()
-;;  }
-;;  Return
-
 ^r::
   If is_target()
     Send %A_ThisHotkey%
   Else
     isearch_backward()
   Return
-
-;;^w::
-;;  If is_target()
-;;    Send %A_ThisHotkey%
-;;  Else
-;;    kill_region()
-;;  Return
-
 !w::
   If is_target()
     Send %A_ThisHotkey%
