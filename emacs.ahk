@@ -22,7 +22,7 @@ is_target()
     Return 1 
   IfWinActive,ahk_class CabinetWClass ; Cygwin
     Return 1 
-  IfWinActive,ahk_class MEADOW ; Meadow
+  IfWinActive,ahk_class Emacs ; Meadow
     Return 1 
   IfWinActive,ahk_class cygwin/x X rl-xterm-XTerm-0
     Return 1
