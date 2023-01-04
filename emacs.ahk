@@ -18,6 +18,8 @@ is_target()
 {
   IfWinActive,ahk_class ConsoleWindowClass ; Cygwin
     Return 1 
+  IfWinActive,ahk_class XLMAIN ; Cygwin
+    Return 1 
   IfWinActive,ahk_class MEADOW ; Meadow
     Return 1 
   IfWinActive,ahk_class cygwin/x X rl-xterm-XTerm-0
