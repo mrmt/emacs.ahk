@@ -232,15 +232,6 @@ scroll_down()
       forward_char()
   }
   Return  
-^c::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-  {
-    If is_pre_x
-      kill_emacs()
-  }
-  Return  
 ^d::
   If is_target()
     Send %A_ThisHotkey%
