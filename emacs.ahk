@@ -213,14 +213,6 @@ scroll_down()
     Send {PgDn}
   Return
 }
-
-
-^x::
-  If is_target()
-    Send %A_ThisHotkey%
-  Else
-    is_pre_x = 1
-  Return 
 ^f::
   If is_target()
     Send %A_ThisHotkey%
