@@ -18,11 +18,11 @@ is_target()
 {
   IfWinActive,ahk_class ConsoleWindowClass ; Cygwin
     Return 1 
-  IfWinActive,ahk_class XLMAIN ; Cygwin
+  IfWinActive,ahk_class XLMAIN ; Excel
     Return 1 
-  IfWinActive,ahk_class CabinetWClass ; Cygwin
+  IfWinActive,ahk_class CabinetWClass ; Explorer
     Return 1 
-  IfWinActive,ahk_class Emacs ; Meadow
+  IfWinActive,ahk_class Emacs
     Return 1 
   IfWinActive,ahk_class cygwin/x X rl-xterm-XTerm-0
     Return 1
